@@ -143,6 +143,23 @@ hr {
     margin: 5px 0;
 }
 
+#circle-cover-bg {
+    width: 90vw;
+    height: 90vh;
+    background: url("../images/reasons") no-repeat center center/cover;
+    margin-bottom: 20px;
+    /* make the reasons image a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
