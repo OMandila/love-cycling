@@ -160,6 +160,31 @@ hr {
     justify-content: center;
 }
 
+#times {
+    background: url(../images/tracks) no-repeat center center/cover;
+    /* handles responsivity without media queries */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* this will not wrap on screens less than 400px
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* creates a grid of meet up times div over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* overide the heading color set in the general styles */
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -225,8 +250,8 @@ hr {
         width: 100%;
     }
 
-    #benefits-physical > div,
-    #benefits-mental > div {
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
 
@@ -249,19 +274,24 @@ hr {
         display: flex;
         flex-direction: row;
     }
-    #benefits > div {
+
+    #benefits>div {
         flex: 1;
     }
+
     #benefits-image {
         order: 0;
     }
+
     #benefits-mental {
         order: 1;
     }
-    #benefits-mental > div {
+
+    #benefits-mental>div {
         align-self: flex-start;
     }
-    #benefits-physical > div {
+
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
